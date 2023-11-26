@@ -417,6 +417,7 @@ Following is the default configuration. See |nvim-tree-opts| for details.
           modified_placement = "after",
           diagnostics_placement = "signcolumn",
           bookmarks_placement = "signcolumn",
+          clipboard_placement = "signcolumn",
           padding = " ",
           symlink_arrow = " ➛ ",
           show = {
@@ -432,6 +433,7 @@ Following is the default configuration. See |nvim-tree-opts| for details.
             default = "",
             symlink = "",
             bookmark = "󰆤",
+            clipboard = "󰱖",
             modified = "●",
             folder = {
               arrow_closed = "",
@@ -944,6 +946,12 @@ Icon sign column precedence:
     or `"signcolumn"` (requires |nvim-tree.view.signcolumn| enabled).
       Type: `string`, Default: `signcolumn`
 
+    *nvim-tree.renderer.icons.clipboard_placement*
+    Place where the clipboard icon will be rendered.
+    Can be `"after"` or `"before"` filename (after the file/folders icons)
+    or `"signcolumn"` (requires |nvim-tree.view.signcolumn| enabled).
+      Type: `string`, Default: `signcolumn`
+
     *nvim-tree.renderer.icons.padding*
     Inserted between icon and filename.
       Type: `string`, Default: `" "`
@@ -997,6 +1005,10 @@ Icon sign column precedence:
         Glyph for files.
         Overridden by |nvim-tree.renderer.icons.web_devicons| if available.
           Type: `string`, Default: `""`
+
+        *nvim-tree.renderer.icons.glyphs.clipboard*
+        Glyph fr clipboard files.
+          Type: `string`, Default: `"󰱖"`
 
         *nvim-tree.renderer.icons.glyphs.symlink*
         Glyph for symlinks to files.

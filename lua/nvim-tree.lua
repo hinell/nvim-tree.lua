@@ -439,6 +439,7 @@ local DEFAULT_OPTS = { -- BEGIN_DEFAULT_OPTS
       modified_placement = "after",
       diagnostics_placement = "signcolumn",
       bookmarks_placement = "signcolumn",
+      clipboard_placement = "signcolumn",
       padding = " ",
       symlink_arrow = " ➛ ",
       show = {
@@ -454,6 +455,7 @@ local DEFAULT_OPTS = { -- BEGIN_DEFAULT_OPTS
         default = "",
         symlink = "",
         bookmark = "󰆤",
+        clipboard = "󰱖",
         modified = "●",
         folder = {
           arrow_closed = "",
@@ -671,6 +673,7 @@ local ACCEPTED_STRINGS = {
       modified_placement = { "before", "after", "signcolumn" },
       diagnostics_placement = { "before", "after", "signcolumn" },
       bookmarks_placement = { "before", "after", "signcolumn" },
+      clipboard_placement = { "before", "after", "signcolumn" },
     },
   },
   help = {
